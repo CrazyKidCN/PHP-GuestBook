@@ -28,7 +28,7 @@ https://project.crazykid.moe/php-guestbook/ 账号: CrazyKid 密码:111111
 - 使用 模态框 实现了前台的留言界面
 - 使用 模态框+Javascript (JQuery) 实现了删除用户、删除留言时的动态信息提示框
 - 使用 [kindeditor](http://kindeditor.net/demo.php) 作为留言的在线编辑器
-- 封装了数据库类、用户类及留言类，并主要使用其中的方法实现功能，体现面向对象思想
+- 封装了数据库类(单例模式)、用户类及留言类，并主要使用其中的方法实现功能，体现面向对象思想
 
 ### 程序截图
 ![image](https://github.com/CrazyKidCN/PHP-GuestBook/blob/master/example-img/8.jpg)
