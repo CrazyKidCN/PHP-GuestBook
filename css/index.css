@@ -1,0 +1,73 @@
+.footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  color: #99979c;
+  text-align: center;
+  background-color: #2a2730;
+}
+
+/*评论块*/
+.comment-box{
+	width: 100%;
+	height: auto;
+	/*background-color: yellow;*/
+}
+
+/*作者块*/
+.author-box{
+	float: left;
+	width: auto;
+	height: auto;
+	/*background-color: blue;*/
+
+	/*边距*/
+	margin-top:10px;
+}
+
+/*作者头像*/
+.author-box #avatar{
+	clear: both;
+	/*边距*/
+	padding: 5px 5px;
+	margin-bottom: 10px;
+
+	/*边框*/
+	border-style: solid; /*实线*/
+	border-radius: 5px; /*圆角*/
+	border-color: #DCDCDC /*颜色*/
+}
+
+/*作者信息*/
+.author-box #info{
+	font-size: 18px;
+}
+
+/*内容块*/
+.content-box{
+	float: right;
+	width: 83%;
+	height: auto;
+	min-height: 250px;
+	/*background-color: red;*/
+
+	/*边距*/
+	padding: 0px 10px 0px 10px;
+
+	/*边框*/
+	border-left: 2px solid grey;
+}
+
+/*留言时间*/
+.content-box #date{
+	/*边框*/
+	border-bottom: 2px dashed #DCDCDC;
+
+	/*边距*/
+	padding: 5px 5px;
+}
+
+/*留言内容*/
+.content-box #content{
+	padding-top: 10px;
+}
