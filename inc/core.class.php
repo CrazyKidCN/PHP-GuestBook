@@ -70,7 +70,7 @@ class Database {
 
     	if ($PHP < 7){
 			$result = mysql_query($sql) or $this->err($sql);
-			if (!($result instanceof mysql_result)) 
+			if (is_bool($result)) 
 				return $result;
 
 			while($row = mysql_fetch_array($result)) {
@@ -79,7 +79,7 @@ class Database {
 			}
 		} else {
 			$result = mysqli_query($this->link, $sql) or $this->err($sql);
-			if (!($result instanceof mysqli_result)) 
+			if (is_bool($result)) 
 				return $result;
 
 			while($row = mysqli_fetch_array($result)) {
