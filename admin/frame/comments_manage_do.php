@@ -92,7 +92,7 @@
   </head>
   <body>
     
-  <h2 class="row" style="padding-top: 10px;padding-left: 20px;" >编辑用户信息</h2>
+  <h2 class="row" style="padding-top: 10px;padding-left: 20px;" >编辑留言信息</h2>
 
   <div class="row" style="padding-top: 10px;padding-left: 20px;">
    <?php if ($HintType=="succeed") { ?>
@@ -112,7 +112,7 @@
     <form action="" method="post" enctype="multipart/form-data">
       <table class="table table-hover">
 		    <div class="form-group">
-          <label for="cid">文章编号</label>
+          <label for="cid">留言编号</label>
           <input type="hidden" class="form-control" id="cid" name="cid"  value="<?php echo $comment->getId(); ?>" />
           <input type="text" class="form-control" disabled="true" value="<?php echo $comment->getId(); ?>" />
         </div>
