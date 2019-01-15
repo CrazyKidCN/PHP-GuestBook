@@ -33,6 +33,7 @@ class Database {
     	if ($PHP < 7){
         	$this->link = mysql_connect($this->db_host.":".$this->db_port, $this->db_user, $this->db_pwd);
         	mysql_query("set names 'UTF-8'");
+		mysql_select_db($this->db_dbname, $this->link);
     	}
       	else{
       		$this->link = mysqli_connect($this->db_host.":".$this->db_port, $this->db_user, $this->db_pwd, $this->db_dbname);
